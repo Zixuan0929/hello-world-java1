@@ -8,7 +8,8 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 }
 group = 'com.example'
-version = 'V1
+version = 'V1'
+
 repositories {
 mavenCentral()
 }
@@ -31,7 +32,7 @@ attributes 'Main-Class': 'com.example.HelloWorld'
 }
 from sourceSets.main.output // Include compiled classes in the JAR
 archiveBaseName = 'hello-world-java' // Name of the JAR file
-destinationDirectory = file('build/libs') // Output directory for the JAR file
+destinationDirectory = file('build/libs') 
 }
 jacocoTestReport {
 dependsOn test

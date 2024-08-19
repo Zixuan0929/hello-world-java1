@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
 
-                        powershell 'gradle clean build'
+                        bat 'gradle clean build'
                 
             }
         }

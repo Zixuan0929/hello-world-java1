@@ -17,13 +17,13 @@ pipeline {
         stage('Test') {
             steps {
                 
-                        powershell 'gradle test'
+                        bat 'gradle test'
                   
             }
         }
         stage('Deploy') {
             steps {                
-                        powershell 'java -jar build/libs/hello-world-java-V1.jar'
+                        bat 'java -jar build/libs/hello-world-java-V1.jar'
                  }           
         }
     
